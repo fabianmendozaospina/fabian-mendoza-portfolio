@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/*--------------------------------------*/
+/*              Basic rules             */
+/*--------------------------------------*/
+
+:root {
+    --app-header-height: 500px;
+    --app-background-color: #ebf4fa;
+    --app-primary-color: #f95353;
+    --app-secundary-color: #44464a;
+    --app-border-radius: 5px;
+}
+
+.container {
+    width: min(100% - 32px, 960px);
+    margin-inline: auto;
+}
+ 
+body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--app-background-color);
+    font-weight: 100;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;  
+    align-items: center; 
+    height: 100svh;
+}
+
+.grid {
+    display: grid;
+}
+
+
+/*--------------------------------------*/
+/*                Header                */
+/*--------------------------------------*/
+
+header {
+    background: #fff url('../img/banner.jpg') no-repeat center center;
+    height: var(--app-header-height);
+}
+
+.navbar {
+    height:var(--app-navbar-height);
+    padding-top: 30px;
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        line-height: var(--app-navbar-height);
+    }
+}
+
+.navbar {
+    color: #fff;
+    
+    .logo {
+        font-size: 34px;
+        font-weight: 800;
+
+        a {
+            text-decoration: none;
+            color: var(--app-primary-color);
+            letter-spacing: 2px;
+        }
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+
+        li {           
+            line-height: var(--app-navbar-height);
+        }
+    }
+
+    img {
+        display: none;
+        cursor: pointer;
+    }    
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 3px 6px;
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+nav ul li a:hover {
+    background-color: rgb(87 87 87 / 60%);
+    color: var(--app-primary-color);
+    border-radius: var(--app-border-radius);
+}
+
+
+/*--------------------------------------*/
+/*              Hero Banner             */
+/*--------------------------------------*/
+
+.hero-banner h1 span .fw_600{
+	font-weight: 600;
+    color: #fff;
+}
+
+.hero-banner {
+    margin-top: 100px;
+    height: calc(80svh - 80px);
+    width: 444px;
+    text-align: left;
+
+    h1, h2 {
+        color: #fff;
+    }
+
+    h1 {
+        margin-top: 15px; 
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    
+    h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }    
+
+    h3 {
+        color: var(--app-primary-color);
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    p {
+        margin-top: 15px;
+        color: var(--app-background-color);
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .hero-banner-buttons {
+        margin-top: 10px;
+
+        a {
+            border-color: var(--app-primary-color);
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 10px 10px 0px 0px;
+            padding: 8px 17px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .primary {
+            background: var(--app-primary-color);
+            display: inline-block;
+        }
+
+        .primary:hover {
+            box-shadow: 1px 5px 12px rgba(0,0,0, 0.15);
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.1);
+            color: #161c23;
+            font-weight: 600;
+        }
+
+        .secundary {
+            background: var(--app-secundary-color);
+            display: inline-block;            
+        }
+
+        .secundary:hover {
+            box-shadow: 1px 5px 12px rgba(0,0,0, 0.15);
+            transition: all 0.5s ease-in-out;
+            transform: scale(1.1);
+            color: var(--app-primary-color);
+        }
+    }
+}
+
+.typing {
+    border-right: 2px solid transparent;
+    white-space: nowrap;           
+    overflow: hidden;    
+    width: 0;          
+    animation: typing 1s steps(12) forwards, blink 0.5s step-end infinite;
+}
+
+#text1 {
+    animation-delay: 0s;    
+}
+  
+#text2 {
+    animation-delay: 2s;         
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
