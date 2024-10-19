@@ -560,6 +560,97 @@ nav ul li a:hover {
 	animation: fadeInDown 700ms ease-in-out;
 }
 
+/*--------------------------------------*/
+/*             Resume Section           */
+/*--------------------------------------*/
+
+.education-container{
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.edu-list{
+    position: relative;
+    display: block;
+    margin: 0 50px;
+    list-style: none;
+}
+
+.edu-list > li{
+	background: transparent;
+	border: 1px solid #F95353;
+	border-radius: 10px;
+    position: relative;
+    margin: 0 0 30px;
+    padding: 25px 25px 25px 25px;
+}
+
+.dark_bg .edu-list > li{
+	border: 1px solid #F95353;
+}
+
+.edu-list > li strong{
+    color: #F95353;
+    font-size: 14px;
+}
+
+.edu-list > li h5{
+    font-size: 16px;
+}
+
+.edu-list > li:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -27px;
+    width: 3px;
+    height: 100%;
+    background: #F95353;
+}
+
+.edu-list > li::after{
+	content: "\e032";
+    position: absolute;
+    top: 0;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+    line-height: 50px;
+	border-radius: 100%;
+	text-align: center;
+    font-size: 20px;
+    font-family: 'et-line';
+    background: #F95353;
+    color: #fff;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.experience > li::after{
+	content: "\e015";
+    position: absolute;
+    top: 0;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+    line-height: 50px;
+	border-radius: 100%;
+	text-align: center;
+    font-size: 20px;
+    font-family: 'et-line';
+    background: #F95353;
+    color: #fff;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
 
 /*--------------------------------------*/
 /*            Contact Section           */
