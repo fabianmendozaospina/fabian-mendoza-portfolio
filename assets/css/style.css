@@ -610,7 +610,7 @@ nav ul li a:hover {
 }
 
 .edu-list > li::after{
-	content: "\e032";
+	content: "\f19d";
     position: absolute;
     top: 0;
 	left: -50px;
