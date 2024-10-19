@@ -620,7 +620,7 @@ nav ul li a:hover {
 	border-radius: 100%;
 	text-align: center;
     font-size: 20px;
-    font-family: 'et-line';
+    font-family: 'FontAwesome';
     background: #F95353;
     color: #fff;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
@@ -631,7 +631,7 @@ nav ul li a:hover {
 }
 
 .experience > li::after{
-	content: "\e015";
+	content: "\f0b1";
     position: absolute;
     top: 0;
 	left: -50px;
@@ -641,7 +641,7 @@ nav ul li a:hover {
 	border-radius: 100%;
 	text-align: center;
     font-size: 20px;
-    font-family: 'et-line';
+    font-family: 'FontAwesome';
     background: #F95353;
     color: #fff;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
