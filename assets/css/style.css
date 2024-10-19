@@ -104,7 +104,7 @@ nav {
 
 nav ul li a {
     color: #fff;
-    padding: 3px 6px;
+    padding: 5px 8px;
     transition: all 0.25s ease-in-out;
     text-decoration: none;
     font-size: 14px;
@@ -564,6 +564,50 @@ nav ul li a:hover {
 	animation: fadeInDown 700ms ease-in-out;
 }
 
+
+/*--------------------------------------*/
+/*            Contact Section           */
+/*--------------------------------------*/
+
+.contact-me {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;         
+}
+
+.form .form-group input{
+	background: transparent;
+	border: 1px solid #dadbdc;
+    height: 40px;
+    border-radius: 0;
+	box-shadow: none;
+    padding: 5px 10px;
+}
+
+.form .form-group input:focus{
+	border: 1px solid #dadbdc;
+}
+
+.form .form-group textarea{
+	background: transparent;
+	border: 1px solid var(--app-primary-color);
+	margin-top: 10px;
+	padding: 5px 10px;
+    border-radius: 0;
+	box-shadow: none;
+    width: 670px;
+}
+
+.form .form-group textarea:focus{
+	border: 1px solid var(--app-primary-color);
+}
+
+.form button {
+    margin-top: 20px;
+    height: 40px;
+}
 
 /*--------------------------------------*/
 /*  Media Queries (Under construction)  */
