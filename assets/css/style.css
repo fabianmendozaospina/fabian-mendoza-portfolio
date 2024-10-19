@@ -351,8 +351,6 @@ nav ul li a:hover {
     position: relative;
     left: 50%;
     background-color: #F95353;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
 
@@ -464,9 +462,113 @@ nav ul li a:hover {
 
 
 /*--------------------------------------*/
-/*            Media Queries             */
+/*           Portfolio Section          */
 /*--------------------------------------*/
-/* Under construction */
+
+.work_filter {
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;       
+}
+
+.work_filter ul{
+	padding: 0;
+	list-style: none;
+	margin-bottom: 30px;    
+}
+
+.work_filter ul li{
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px 25px;
+	border-radius: 30px;
+	border: 1px solid #F95353;
+	color: #333333;
+    letter-spacing: 1px;
+    margin: 0 5px 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.work_filter .active{
+    color: #fff;
+	border: 1px solid #F95353;
+    background: #F95353;
+}
+
+.work_filter ul li:hover{
+    color: #fff;
+	border: 1px solid #F95353;
+	background: #F95353;
+}
+
+.item-img {
+    width: 200px;
+    height: 150px;   
+}
+
+.work_content_area {
+    gap: 30px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;       
+}
+
+.work_content_area .item-img{
+	position: relative;
+	margin-bottom: 30px;
+	transition: all .4s;
+}
+
+.work_content_area .item-img:hover{
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.work_content_area .item-img:hover .item-img-overlay{
+	visibility: visible;
+	opacity: 1;
+}
+
+.overlay-info{
+	margin-top: 50px;
+}
+
+.work_content_area .item-img-overlay{
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	top: 0;
+	padding: 30px;
+	background: rgba(245, 84, 34, 0.6) none repeat scroll 0 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 2s;
+}
+
+.work_content_area .item-img-overlay .icon{
+	position: absolute;
+	right: 155px;
+	bottom: 120px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+.work_content_area:hover a{
+	animation: fadeInDown 700ms ease-in-out;
+}
+
+
+/*--------------------------------------*/
+/*  Media Queries (Under construction)  */
+/*--------------------------------------*/
+
 /* Small screens (sm), 6 columns */
 @media (min-width: 576px) {
     .column {
