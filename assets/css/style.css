@@ -424,7 +424,25 @@ nav ul li a:hover {
     background-attachment: fixed;
 }
 
+.cta2_section{
+	background: url(../img/cta2_action.jpg);
+	position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .cta_section:before {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(35, 43, 50, 0.8);
+    z-index: 0;
+}
+
+.cta2_section:before {
 	position: absolute;
 	content: "";
 	right: 0;
@@ -456,6 +474,26 @@ nav ul li a:hover {
     }
 }
 
+.cta2_content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;     
+
+    h3 {
+        color: #fff;
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .main_btn {
+        z-index: 1;
+    }
+}
 
 /*--------------------------------------*/
 /*           Portfolio Section          */
